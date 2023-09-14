@@ -59,32 +59,39 @@ function Import({ setIclick, impData }) {
                 <InsertInput
                   onchange={(event) => setFirstName(event.target.value)}
                   placeholder="Enter first name"
+                  type="text"
                 />
                 <InsertInput
                   onchange={(event) => setLastName(event.target.value)}
                   placeholder="Enter Last name"
+                  type="text"
                 />
                 <InsertInput
                   onchange={(event) => setEmail(event.target.value)}
                   placeholder="Enter Email"
+                  type="email"
                 />
                 <InsertInput
                   onchange={(event) => setCellNo(event.target.value)}
                   placeholder="Enter mobile no"
+                  type="txt"
                 />
               </div>
               <div className="mt-8 ml-3 flex flex-col gap-6 justify-center items-center">
                 <InsertInput
                   onchange={(event) => setDate(event.target.value)}
                   placeholder="Enter Date"
+                  type="date"
                 />
                 <InsertInput
                   onchange={(event) => setEtype(event.target.value)}
                   placeholder="Enter email Type"
+                  type="text"
                 />
                 <InsertInput
                   onchange={(event) => setId(event.target.value)}
                   placeholder="Enter Id"
+                  type="number"
                 />
               </div>
             </div>
