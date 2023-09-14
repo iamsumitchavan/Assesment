@@ -1,8 +1,8 @@
-import { memo, useState } from "react";
+import { useState } from "react";
 import { CiCircleRemove } from "react-icons/ci";
 import InsertInput from "./InsertInput";
 import Button from "./Button";
-import { motion } from "framer-motion";
+
 function Import({ setIclick, impData }) {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");

@@ -1,4 +1,3 @@
-import { AiOutlineMail } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
 import { HiMiniChevronDown, HiChevronUp } from "react-icons/hi2";
 import { MdOutlineCampaign } from "react-icons/md";

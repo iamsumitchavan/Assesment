@@ -1,4 +1,3 @@
-import { memo, useState } from "react";
 import { CiCircleRemove } from "react-icons/ci";
 import Input from "./Input";
 import Button from "./Button";

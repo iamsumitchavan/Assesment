@@ -1,4 +1,3 @@
-import Button from "./Button";
 function Input({ value, title }) {
   function handleInputChange(event) {
     value = event.target.value;
