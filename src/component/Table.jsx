@@ -1,5 +1,5 @@
 import { BsSquare } from "react-icons/bs";
-import { data } from "./DummyData";
+import { Data } from "./DummyData";
 import { useState } from "react";
 import PopupDetail from "./PopupDetail";
 import Import from "./Import";
@@ -7,7 +7,7 @@ function Table({ iClick, iTitle, setIclick }) {
   const [click, setClick] = useState(false);
   const [tableData, setTableData] = useState({});
   const [pTitle, setPtitle] = useState("");
-  const [impData, setImpData] = useState(data);
+  const [impData, setImpData] = useState(Data);
   const [sort, setSort] = useState("default");
   const [currentPage, setCurrentPage] = useState(1);
   const recordPerPage = 10;
