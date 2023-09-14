@@ -1,8 +1,20 @@
 import { BsSquare } from "react-icons/bs";
-import { Data } from "./DummyData";
+
 import { useState } from "react";
 import PopupDetail from "./PopupDetail";
 import Import from "./Import";
+
+const Data = [
+  {
+    id: 1,
+    email: "chavansumit121@gmail.com",
+    firstName: "sumit",
+    lastName: "chavan",
+    phoneNo: "9172640678",
+    emailType: "RDM",
+    registerDate: "10-10-2010",
+  },
+];
 function Table({ iClick, iTitle, setIclick }) {
   const [click, setClick] = useState(false);
   const [tableData, setTableData] = useState({});
