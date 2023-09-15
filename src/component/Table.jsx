@@ -126,7 +126,7 @@ function Table({ iClick, iTitle, setIclick }) {
     impData.sort(function (a, b) {
       return a.firstName < b.lastName ? -1 : 1;
     });
-  } else if (sort == email) {
+  } else if (sort == "email") {
     impData.sort(function (a, b) {
       return a.email < b.email ? -1 : 1;
     });
