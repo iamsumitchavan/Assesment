@@ -16,84 +16,84 @@ const Data = [
   },
   {
     id: 2,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "avinashKatta@gmail.com",
+    firstName: "Avinash",
+    lastName: "Katta",
+    phoneNo: "8888880678",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "10-01-2010",
   },
   {
     id: 3,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "sudhirkasare22@gmail.com",
+    firstName: "sudhir",
+    lastName: "kasare",
+    phoneNo: "7656543432",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "01-11-2022",
   },
   {
     id: 4,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "vaishnavinaik21@gmail.com",
+    firstName: "vaishnavi",
+    lastName: "naik",
+    phoneNo: "6545321234",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "05-07-2012",
   },
   {
     id: 5,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "akhileshyadav45@gmail.com",
+    firstName: "akhilesh",
+    lastName: "yadav",
+    phoneNo: "1234567890",
     emailType: "RDM",
     registerDate: "10-10-2010",
   },
   {
     id: 6,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "suryasingh72@gmail.com",
+    firstName: "surya",
+    lastName: "singh",
+    phoneNo: "8765453212",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "11-02-2011",
   },
   {
     id: 7,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
+    email: "irfanshaikh18@gmail.com",
+    firstName: "Irfan",
+    lastName: "shaikh",
     phoneNo: "9172640678",
     emailType: "RDM",
     registerDate: "10-10-2010",
   },
   {
     id: 8,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "Anilkadam44@gmail.com",
+    firstName: "Anil",
+    lastName: "kadam",
+    phoneNo: "9890606677",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "10-05-2010",
   },
   {
     id: 9,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "subhasharekar33@gmail.com",
+    firstName: "subhash",
+    lastName: "arekar",
+    phoneNo: "7788997766",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "08-10-2010",
   },
   {
     id: 10,
-    email: "chavansumit121@gmail.com",
-    firstName: "sumit",
-    lastName: "chavan",
-    phoneNo: "9172640678",
+    email: "priyankachaudhary44@gmail.com",
+    firstName: "Priyanka",
+    lastName: "chaudhary",
+    phoneNo: "9878009877",
     emailType: "RDM",
-    registerDate: "10-10-2010",
+    registerDate: "10-02-2010",
   },
 ];
 function Table({ iClick, iTitle, setIclick }) {
@@ -124,25 +124,11 @@ function Table({ iClick, iTitle, setIclick }) {
 
   if (sort == "name") {
     impData.sort(function (a, b) {
-      if (a.firstName < b.firstName) {
-        return -1;
-      }
-      if (a.firstName > b.firstName) {
-        return 1;
-      }
-      return 0;
+      return a.firstName < b.lastName ? -1 : 1;
     });
-  }
-
-  if (sort == "email") {
+  } else if (sort == email) {
     impData.sort(function (a, b) {
-      if (a.email < b.email) {
-        return -1;
-      }
-      if (a.email > b.email) {
-        return 1;
-      }
-      return 0;
+      return a.email < b.email ? -1 : 1;
     });
   }
 
